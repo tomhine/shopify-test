@@ -492,8 +492,14 @@ video {
 .flex {
   display: flex;
 }
+.h-12 {
+  height: 3rem;
+}
 .h-96 {
   height: 24rem;
+}
+.h-full {
+  height: 100%;
 }
 .w-full {
   width: 100%;
@@ -507,6 +513,10 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 .p-4 {
   padding: 1rem;
