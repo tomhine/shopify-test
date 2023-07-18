@@ -519,8 +519,14 @@ video {
 .h-16 {
   height: 4rem;
 }
+.h-8 {
+  height: 2rem;
+}
 .w-full {
   width: 100%;
+}
+.w-8 {
+  width: 2rem;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -545,6 +551,9 @@ video {
 }
 .rounded {
   border-radius: 0.25rem;
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .bg-blue-500 {
   --tw-bg-opacity: 1;
@@ -633,8 +642,21 @@ video {
     height: 5rem;
   }
 
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
