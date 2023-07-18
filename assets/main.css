@@ -654,8 +654,16 @@ video {
     height: 2.5rem;
   }
 
+  .md\:h-12 {
+    height: 3rem;
+  }
+
   .md\:w-10 {
     width: 2.5rem;
+  }
+
+  .md\:w-12 {
+    width: 3rem;
   }
 
   .md\:px-0 {
