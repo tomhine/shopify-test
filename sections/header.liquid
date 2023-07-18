@@ -17,7 +17,7 @@
       <ul class="flex">
         {% for link in section.settings.main_nav.links %}
           <li class="relative" {% if link.links.size > 0 %} data-hover-item {% endif %}>
-            <a href="{{ link.url }}" class="text-white md:mx-4 flex items-center gap-4 p-4 md:px-0" data-nav="header-desktop" data-nav-location="{{ link.url }}" data-nav-text="{{ link.title }}">
+            <a href="{{ link.url }}" class="text-white uppercase md:mx-4 flex items-center gap-4 p-4 md:px-0" data-nav="header-desktop" data-nav-location="{{ link.url }}" data-nav-text="{{ link.title }}">
               {{ link.title | escape }}
               <span>
                 {% if link.links.size > 0 %} {% render 'icon-chevron-down', class: 'verical-align-unset' %} {% endif %}
@@ -27,7 +27,7 @@
               <ul class="absolute m-0 pt-2 flex flex-col gap-2" data-dropdown-item>
                 {% for childLink in link.links %}
                   <li class="shadow rounded">
-                    <a href="{{ childLink.url }}" class="block text-black bg-gray-200 rounded px-6 py-4" data-nav="header-desktop" data-nav-location="{{ childLink.url }}" data-nav-text="{{ childLink.title }}">{{ childLink.title | escape }}</a>
+                    <a href="{{ childLink.url }}" class="block text-black uppercase bg-gray-200 rounded px-6 py-4" data-nav="header-desktop" data-nav-location="{{ childLink.url }}" data-nav-text="{{ childLink.title }}">{{ childLink.title | escape }}</a>
                   </li>
                 {% endfor %}
               </ul>
