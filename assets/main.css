@@ -528,6 +528,10 @@ video {
 .w-8 {
   width: 2rem;
 }
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
 .max-w-7xl {
   max-width: 80rem;
 }

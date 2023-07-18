@@ -1,13 +1,13 @@
 <header class="w-full h-16 md:h-20 bg-gray-800">
-  <div class="w-full h-full max-w-7xl mx-auto flex items-center">
+  <div class="w-full h-full max-w-7xl mx-auto flex items-center px-2">
 
     {% comment %} Store logo {% endcomment %}
-    <div>
+    <div class="min-w-max">
       <a href="{{ shop.url }}" class="flex items-center gap-4">
         {% if shop.logo %}
           <img src="{{ shop.logo | img_url: '200x200' }}" alt="{{ shop.name }}" class="w-8 h-8 md:w-10 md:h-10">
         {% else %}
-          <h1>
+          <h1 class="text-white">
             <a href="{{ routes.root_url }}">{{ shop.name }}</a>
           </h1>
         {% endif %}
