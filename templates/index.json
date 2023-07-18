@@ -1,7 +1,9 @@
 {
   "sections": {
     "main": {
-      "type": "hero"
+      "type": "hero",
+      "settings": {
+      }
     }
   },
   "order": [
