@@ -1,17 +1,19 @@
 <div class="w-full h-96 bg-blue-500 flex items-center">
     <div class="w-full max-w-7xl mx-auto px-2">
-        <h1 class="font-bold text-3xl text-white">{{ section.settings.title | t }}</h1>
+        <h1 class="font-bold text-3xl text-white">{{ section.settings.title }}</h1>
     </div>
 </div>
 
 {% schema %}
 {
   "name": "Hero",
+  "tag": "section",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Title"
+      "label": "Title",
+      "default": "Hero Text"
     },
     {
       "type": "richtext",
