@@ -7,11 +7,9 @@
         {% if shop.logo %}
           <img src="{{ shop.logo | img_url: '200x200' }}" alt="{{ shop.name }}" class="w-8 h-8 md:w-10 md:h-10">
         {% else %}
-          <div class="w-8 h-8 md:w-10 md:h-10 bg-gray-200 rounded-full">
-            <h1>
-              <a href="{{ routes.root_url }}">{{ shop.name }}</a>
-            </h1>
-          </div>
+          <h1>
+            <a href="{{ routes.root_url }}">{{ shop.name }}</a>
+          </h1>
         {% endif %}
       </a>
     </div>
